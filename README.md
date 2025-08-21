@@ -31,7 +31,7 @@ source egg-trait-env/bin/activate  # On Windows: egg-trait-env\Scripts\activate
 
 3. Install required packages:
 ```bash
-uv pip install torch torchvision transformers pillow opencv-python matplotlib pandas pyyaml numpy
+uv pip install torch torchvision transformers=4.48.3 pillow opencv-python matplotlib pandas pyyaml numpy
 ```
 
 ### SAM2 Installation
