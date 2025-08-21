@@ -9,6 +9,28 @@ The `get_eggs` pipeline processes images to automatically detect and extract egg
 - **SAM2 (Segment Anything Model 2)** for precise segmentation
 - **Non-Maximum Suppression (NMS)** for filtering overlapping detections
 
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>Input Image</h3>
+      <img src="imgs/egg_example.png" alt="Original egg image" width="300" />
+    </td>
+    <td align="center" width="50%">
+      <h3>Detected & Cropped Eggs</h3>
+      <table>
+        <tr>
+          <td><img src="imgs/crop_2.png" alt="Crop 2" width="140" /></td>
+          <td><img src="imgs/crop_3.png" alt="Crop 3" width="140" /></td>
+        </tr>
+        <tr>
+          <td><img src="imgs/crop_0.png" alt="Crop 0" width="140" /></td>
+          <td><img src="imgs/crop_1.png" alt="Crop 1" width="140" /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 ## Installation
 
 ### Prerequisites
