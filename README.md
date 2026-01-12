@@ -1,6 +1,6 @@
 # Global Egg Trait Detection Pipeline
 
-This repository contains a computer vision pipeline for detecting, segmenting, and cropping eggs from biological images using Grounding DINO & SAM2.
+This repository contains a computer vision pipeline for detecting, segmenting, and cropping eggs from biological images using Grounding DINO & SAM2. The software was collaboratively developed during the [2025 FuncaPalooza Workshop](https://github.com/Imageomics/FuncaPalooza-2025/wiki). 
 
 ## Overview
 
@@ -30,6 +30,8 @@ The `get_eggs` pipeline processes images to automatically detect and extract egg
     </td>
   </tr>
 </table>
+
+**The example images displayed above are from iNaturalist. This repository contains software only; it does not host or redistribute any image data.**. 
 
 ## Installation
 
