@@ -31,7 +31,6 @@ The `get_eggs` pipeline processes images to automatically detect and extract egg
   </tr>
 </table>
 
-**The example images displayed above are from iNaturalist. This repository contains software only; it does not host or redistribute any image data.**. 
 
 ## Installation
 
@@ -159,4 +158,22 @@ The pipeline generates:
 - `visualize.py` - Visualization helpers
 - `egg.yml` - Example configuration file
 
+## Data Acknowledgements
+
+The sample image `imgs/egg_example.png` was sourced from [GBIF Occurrence 3357524680](https://www.gbif.org/occurrence/3357524680). 
+
+* **Rights Holder / Creator:** Museon-Omniversum
+* **License:** [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
+* **Institution Code:** MUDH (Museon-Omniversum)
+
+> **Citation:** Kockelkorn H, Creuwels J (2025). Museon Aves Collection. Version 1.9. Museon. Occurrence dataset https://doi.org/10.15468/8dxwmu accessed via GBIF.org on 2025-08-19. https://www.gbif.org/occurrence/3357524680.
+
+**This is a code repository. It does NOT re-distribute any image data.** `metadata_geo_elev.csv` contains the image URI and MD5 hash that could be used for image download from source. We recommend using the [cautious-robot package](https://github.com/Imageomics/cautious-robot) to download the images with verification. Install the package and set your path to the CSV and desired image location using the code below:
+
+```bash
+pip install cautious-robot
+cautious-robot -i path/to/metadata_geo_elev.csv -o path/to/images -u uri -v md5
+```
+
+This will download all images to the desired location, using the filenames provided in the CSV, then verify the completeness of the download based on the provided hashsums.
 
